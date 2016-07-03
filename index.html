@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <!--bootstrap -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../_bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <!--bootstrap -->
+    <link rel="shortcut icon" href="images/index.ico">
+
+    <title>
+        清华大学学生科协
+    </title>
+    <style type="text/css">
+        body{
+            font-family:"Adobe 黑体 Std R";
+            background-image: url("images/headbg.png");
+            background-repeat:no-repeat;
+        }
+    </style>
+</head>
+<body>
+<!-- script -->
+<script src="../_bootstrap/js/jquery-1.12.3.min.js"></script>
+<script src="../_bootstrap/js/bootstrap.min.js"></script>
+<!--请将js放在这里-->
+<script>
+    function openregister() {
+        window.open("joinin.html", "_blank");
+    }
+</script>
+
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand">清华大学学生科协</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">首页<span class="sr-only">(current)</span></a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        活动 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="testtable.html">星火论坛</a></li>
+                        <li><a href="#">燎原实践</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="kezhan.html">挑战杯科展</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        赛事<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">新生创意大赛</a></li>
+                        <li><a href="#">创意大赛</a></li>
+                        <li><a href="#">挑战杯</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">院系科创评级</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        项目<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">本科生学术基金</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        其他<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">清华大学学术学报</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        contact<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">邮箱</a></li>
+                        <li><a href="#">微信公众号</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">通讯录</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        关于校科协<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">历史</a></li>
+                        <li><a href="#">部门设置</a></li>
+                        <li><a href="#">美洲之猩</a></li>
+                    </ul>
+                </li>
+                <li><a href="joinin.html">加入校科协</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div>
+</nav>
+
+<!-- -->
+
+<div class="container">
+        <!-- Nav tabs -->
+    <div width="100%" height="200px">&nbsp</div>
+    <div class="page-header">
+        <div class="row">
+            <div class="col-lg-8">
+                <table border="0">
+                    <tr>
+                        <td>
+                            <img src="images/nav_logo.png" height="120px">
+                        </td>
+                        <td>
+                            <div>
+                                <img src="images/nav_1.png" height="70px">
+                                <img src="images/nav_2.png" height="70px">
+                            </div>
+                        </td>
+                    </tr>
+
+
+                </table>
+            </div>
+            <div align="right" class="col-lg-4">
+                <!-- Button trigger modal -->
+                <a role="button" data-toggle="modal" data-target="#myModal">
+                                后台入口
+                </a>
+                <p>&nbsp</p>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-info" type="button">
+                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                        </button>
+                    </span>
+                </div>
+                <!--<p>&nbsp</p>-->
+                <!-- Modal -->
+                <form action="admin.php" target="_self" method="get">
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel" align="left">后台登录</h4>
+                            </div>
+                            <div class="modal-body">
+
+                                    <table width="100%">
+                                        <tr width="100%">
+                                            <td width="25%" class="hidden-xs">&nbsp</td>
+                                            <td width="50%" align="center">
+                                                <img id="image_hamicat" src="images/tail.gif" width="80%">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon" id="login_user_name">用户名</span>
+                                                    <input name="user_name" type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+                                                </div>
+                                                <p></p>
+                                                <div class="input-group">
+                                                    <span class="input-group-addon" id="login_user_password">密&nbsp&nbsp&nbsp码</span>
+                                                    <input name="user_passwd" type="password" class="form-control" placeholder="Password" aria-describedby="basic-addon1">
+                                                </div>
+                                                <p></p>
+                                                <div class="input-group">
+                                                    <span class="input-group-addon" id="login_user_horse">验证码</span>
+                                                    <input name="check_code" id="check_code" type="text" class="form-control" placeholder="这是几匹马？" aria-describedby="basic-addon1">
+                                                </div>
+                                            </td>
+                                            <td width="25%" class="hidden-xs">&nbsp</td>
+                                        </tr>
+                                    </table>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                                <input type="submit" class="btn btn-primary" value="登录">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </form>
+                <br>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-3">
+            <div class="panel panel-default"">
+                <div class="panel-body">当前正在报名中的活动、项目、赛事链接列表
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="images/1.jpg" role="button" onclick="openregister()" alt="...">
+                        <!--<div class="carousel-caption">-->
+                        <!--<button type="button" class="btn btn-info" onclick="openregister()"><span style="font-size:20px">现在报名</span></button>-->
+                        <!--</div>-->
+                    </div>
+                    <div class="item">
+                        <img src="images/2.jpg" alt="...">
+                        <!--<div class="carousel-caption">-->
+                        <!--<table>-->
+                        <!--<tr><td><span style="font-size:20px">科展就在前方！</span></td></tr>-->
+                        <!--<tr>-->
+                        <!--<td>-->
+                        <!--<button type="button" class="btn btn-info" onclick="window.open('kezhan.html','_self')">-->
+                        <!--查看详情</button>-->
+                        <!--<button type="button" class="btn btn-info" onclick="window.open('kezhan.html#settings','_self')">-->
+                        <!--我是参展方</button>-->
+                        <!--</td>-->
+                        <!--</tr>-->
+                        <!--</table>-->
+                        <!--</div>-->
+                    </div>
+                    <div class="item">
+                        <img src="images/3.jpg" alt="...">
+                        <div class="carousel-caption">
+                            ...
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="panel panel-default">
+                <div class="panel-body">用户登录/注册框。如果已经登录，则显示如下内容：<br>
+                1.头像和昵称<br>
+                2.待办事项条数(包含未提交的材料，未填写的表格等）<span style="color:red">特殊账号还需显示：待评分/审核的项目条数</span><br>
+                3.正在审核/评分中的事项条数和尚未阅读的审核/评分结果条数
+                    <br><br><br><br><br><br><br><br><br><br><br></div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    新闻和通知
+                </div>
+                <div class="panel-body">
+                    这里发布校科协相关的科创新闻和事项通知链接。包括但不限于：
+                    <br>1.招新、赛事等等开始报名的信息。
+                    <br>2.各种各样应该让活动参加者知道的通知。
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="panel panel-success">
+                <div class="panel-heading">
+                    赛事结果公示
+                </div>
+                <div class="panel-body">
+                    这里发布校科协最近数个赛事的结果链接。
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    灌水区
+                </div>
+                <div class="panel-body">
+                    这里发布一些灌水的东西。
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="panel-footer">
+    清华大学学生科协
+</div>
+</body>
+</html>

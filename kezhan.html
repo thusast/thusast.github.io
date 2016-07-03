@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <!--bootstrap -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../_bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <!--bootstrap -->
+
+    <title>
+        挑战杯科展
+    </title>
+    <style type="text/css">
+        body{
+            font-family:黑体;
+        }
+    </style>
+</head>
+<body>
+<!-- script -->
+<script src="../_bootstrap/js/jquery-1.12.3.min.js"></script>
+<script src="../_bootstrap/js/bootstrap.min.js"></script>
+<!--请将js放在这里-->
+<script>
+    function active_ico(ima_number)
+    {
+        document.getElementById('btn_btm_1').src='images/bottom1.png';
+        document.getElementById('btn_btm_2').src='images/bottom2.png';
+        document.getElementById('btn_btm_3').src='images/bottom3.png';
+        document.getElementById('btn_btm_4').src='images/bottom4.png';
+        document.getElementById('td_1').style.backgroundColor='';
+        document.getElementById('td_2').style.backgroundColor='';
+        document.getElementById('td_3').style.backgroundColor='';
+        document.getElementById('td_4').style.backgroundColor='';
+        switch(ima_number) {
+            case(1):
+            {
+                document.getElementById('btn_btm_1').src='images/bottom1_active.png';
+                document.getElementById('td_1').style.backgroundColor="lightgray";
+                break;
+            }
+            case(2):
+            {
+                document.getElementById('btn_btm_2').src='images/bottom2_active.png';
+                document.getElementById('td_2').style.backgroundColor="lightgray";
+                break;
+            }
+            case(3):
+            {
+                document.getElementById('btn_btm_3').src='images/bottom3_active.png';
+                document.getElementById('td_3').style.backgroundColor='lightgray';
+                break;
+            }
+            case(4):
+            {
+                document.getElementById('btn_btm_4').src='images/bottom4_active.png';
+                document.getElementById('td_4').style.backgroundColor='lightgray';
+                break;
+            }
+        }
+    }
+</script>
+<!-- script -->
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">清华大学学生科协</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">首页</a></li>
+                <li  class="active" class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        活动 <span class="sr-only">(current)</span><span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">星火论坛</a></li>
+                        <li><a href="#">燎原实践</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">挑战杯科展</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        赛事<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">新生创意大赛</a></li>
+                        <li><a href="#">创意大赛</a></li>
+                        <li><a href="#">挑战杯</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">院系科创评级</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">学报</a></li>
+                <li><a href="#">本科生学术基金</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        contact<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">邮箱</a></li>
+                        <li><a href="#">微信公众号</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">通讯录</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        关于校科协<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">历史</a></li>
+                        <li><a href="#">部门设置</a></li>
+                        <li><a href="#">美洲之猩</a></li>
+                    </ul>
+                </li>
+                <li><a href="joinin.html">加入校科协</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div>
+</nav>
+<div width="100%">&nbsp<br>&nbsp</div>
+<div class="container">
+    <div class="page-header hidden-xs"><h1 align="center" style="color:purple">"挑战杯"学生课外学术科技作品展</h1></div>
+    <div class="visible-xs-block">
+        <div class="page-header">
+            <h1 align="center" style="color:purple">"挑战杯"科展</h1>
+            <!-- Nav tabs -->
+            <!--<ul class="nav nav-pills" role="tablist">-->
+                <!--<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>-->
+                <!--<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>-->
+                <!--<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>-->
+                <!--<li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>-->
+            <!--</ul>-->
+        </div>
+    </div>
+    <table valign="top" width="100%">
+        <tr>
+            <td class="hidden-xs" valign="top" width="15%">
+                <!-- Nav tabs -->
+                <ul class="nav nav-pills nav-stacked" role="tablist">
+                    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">科展概况</a></li>
+                    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">往届回顾</a></li>
+                    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">相关文档</a></li>
+                    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">参展方入口</a></li>
+                </ul>
+            </td>
+            <td width="85%">
+            <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="home" width="100%">
+                        <table>
+                            <tr>
+                                <td width="10%" class="hidden-xs"></td>
+                                <td width="80%">
+                                    <p style="font-size:20px">&nbsp&nbsp&nbsp&nbsp“挑战杯”学生课外学术科技作品竞赛暨展览（简称“挑战杯”科展）是由清华大学教务处，科研院，研究生院和校团委联合主办，校学生科协承办，是清华大学历史最长、规模最大、水平最高的综合性学生课外学术科技活动，是校学生课外学术科技领域的年度盛会，也是每年学校、历届校友和关心本校学生成长的社会各界人士对清华大学学生课外学术科技活动的总体检阅。“挑战杯”科展不仅展出清华大学“挑战杯”学生课外学术科技作品竞赛的参赛作品，而且将包含各个院系和兴趣社团的课外学术成果以及校外企业的创新产品，吸引、鼓励有点子、有创意的同学参与课外科创，并成为全校同学接触校内外科创前沿的窗口。
+                                    </p>
+                                    <p style="font-size:20px">&nbsp&nbsp&nbsp&nbsp1983年，清华大学第一届学生科技作品展览隆重举行。1988年，清华大学首次设立“挑战杯”，之后在全国得到推广。自1983年至今，每年清华大学校庆前后，挑战杯科展都会如期举行。34年来，随着越来越多的优秀作品不断涌现，挑战杯科展的展览规模和范围也不断扩大，展区面积从最初的一百多平米发展至如今上千平米，参展单位从最初的理工科院系发展至如今理科、工科、文科、美院共29个院系和诸多科技兴趣团队共同参展。三十年风雨兼程，“挑战杯”科展见证了清华大学学生课外学术科技领域的蓬勃发展，并将继续展示新一代清华人“崇尚科学，追求真知，勇于创新，迎接挑战，服务奉献”的挑战杯精神。</p>
+                                    <p style="font-size:20px">&nbsp&nbsp&nbsp&nbsp2014年底，清华大学与政府、投资界三方合力打造了高校创业服务平台“创+”，次年“创+”以第33届“挑战杯”科展为依托举办第一届“创业嘉年华”活动。此次“创业嘉年华”受到社会各界关注，校长邱勇当场购买了同学们的产品。自此“创业嘉年华”成为“挑战杯”科展不可或缺的一部分，极大丰富了“挑战杯”科展的展品数量和质量。</p>
+                                    <img width="100%" src="images/kezhanbg.png">
+                                </td>
+                                <td width="10%" class="hidden-xs"></td>
+                            </tr>
+                        </table>
+
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="profile">
+                        <table>
+                            <tr>
+                                <td class="hidden-xs" width="10%"></td>
+                                <td>
+                                    <img width="100%" src="images/3.jpg">
+                                </td>
+                                <td class="hidden-xs" width="10%"></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="messages">messages</div>
+                    <div role="tabpanel" class="tab-pane" id="settings">settings</div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+<div class="panel-footer hidden-xs">
+    清华大学学生科协
+</div>
+<p class="visible-xs-block">&nbsp<br>&nbsp</p>
+<nav class="navbar navbar-default navbar-fixed-bottom visible-xs-block" height="100px">
+
+        <div class="navbar-header">
+            <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">-->
+                <!--<span class="sr-only">Toggle navigation</span>-->
+                <!--<span class="icon-bar"></span>-->
+                <!--<span class="icon-bar"></span>-->
+                <!--<span class="icon-bar"></span>-->
+            <!--</button>-->
+            <div class="container">
+            <table cellspacing="5px" align="center" role="tablist" width="100%">
+                <tr width="100%">
+            <td id="td_1" role="presentation" class="active" width="25%" align="center" style="background-color: lightgray">
+                <a href="#home" aria-controls="home" role="tab" data-toggle="tab">
+                    <img id="btn_btm_1" src="images/bottom1_active.png" width="50px" onclick="active_ico(1)">
+                </a></td>
+            <td id="td_2" role="presentation" width="25%" align="center" bgcolor="">
+                <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">
+                    <img src="images/bottom2.png" id="btn_btm_2" width="50px" onclick="active_ico(2)">
+                </a></td>
+            <td id="td_3" role="presentation" width="25%" align="center" bgcolor="">
+                <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">
+                    <img src="images/bottom3.png" id="btn_btm_3" width="50px" onclick="active_ico(3)">
+                </a></td>
+            <td id="td_4" role="presentation" width="25%" align="center" bgcolor="">
+                <a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">
+                    <img src="images/bottom4.png" id="btn_btm_4" width="50px" onclick="active_ico(4)">
+                </a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</nav>
+</body>
+</html>

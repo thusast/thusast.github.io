@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <!--bootstrap -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../_bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <!--bootstrap -->
+
+    <style type="text/css">
+        body {
+            font-family:"Adobe 黑体 Std R";
+        }
+        #head{
+            color:purple;
+        }
+        #tips{
+            color:black;
+        }
+    </style>
+    <title>
+        加入校科协
+    </title>
+</head>
+<body>
+<!-- script -->
+<script src="../_bootstrap/js/jquery-1.12.3.min.js"></script>
+<script src="../_bootstrap/js/bootstrap.min.js"></script>
+<!--请将js放在这里-->
+<script>
+    var sex_verified=false;
+    $(document).ready(function(){
+       $('[data-toggle="popover"]').popover();
+    });
+    function validate_form()
+    {
+        var flag=true;
+        var user_name=document.getElementById('text_user_name').value;
+        if(user_name.length==0)
+        {
+            $('#text_user_name').popover('show');
+            if(flag==true){
+                $('#text_user_name').focus();
+            }
+            flag=false;
+        }
+
+        if(sex_verified==false)
+        {
+            $('#text_user_sex').popover('show');
+            if(flag==true){
+                $('#text_user_sex').focus();
+            }
+            flag=false;
+        }
+
+        var user_student_number=document.getElementById('text_user_student_number').value;
+        if(user_student_number.length==0)
+        {
+            $('#text_user_student_number').popover('show');
+            if(flag==true){
+                $('#text_user_student_number').focus();
+            }
+            flag=false;
+        }
+
+
+        var user_student_depart=document.getElementById('text_user_student_depart').value;
+        if(user_student_depart.length==0)
+        {
+            $('#text_user_student_depart').popover('show');
+            if(flag==true){
+                $('#text_user_student_depart').focus();
+            }
+            flag=false;
+        }
+
+        var user_student_class=document.getElementById('text_user_student_class').value;
+        if(user_student_class.length==0)
+        {
+            $('#text_user_student_class').popover('show');
+            if(flag==true){
+                $('#text_user_student_class').focus();
+            }
+            flag=false;
+        }
+
+        var user_phone_number=document.getElementById('text_user_phone_number').value;
+        if(user_phone_number.length==0)
+        {
+            $('#text_user_phone_number').popover('show');
+            if(flag==true){
+                $('#text_user_phone_number').focus();
+            }
+            flag=false;
+        }
+
+
+        var user_email=document.getElementById('text_user_email').value;
+        if(user_email.length==0)
+        {
+            $('#text_user_email').popover('show');
+            if(flag==true){
+                $('#text_user_email').focus();
+            }
+            flag=false;
+        }
+
+        return flag;
+    }
+</script>
+<!-- script -->
+
+<!-- 导航栏-->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">清华大学学生科协</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">首页</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        活动 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">星火论坛</a></li>
+                        <li><a href="#">燎原实践</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="kezhan.html">挑战杯科展</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        赛事<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">新生创意大赛</a></li>
+                        <li><a href="#">创意大赛</a></li>
+                        <li><a href="#">挑战杯</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">院系科创评级</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">学报</a></li>
+                <li><a href="#">本科生学术基金</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        contact<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">邮箱</a></li>
+                        <li><a href="#">微信公众号</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">通讯录</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        关于校科协<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">历史</a></li>
+                        <li><a href="#">部门设置</a></li>
+                        <li><a href="#">美洲之猩</a></li>
+                    </ul>
+                </li>
+                <li class="active"><a href="#">加入校科协<span class="sr-only">(current)</span></a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div>
+</nav>
+<!-- 内容-->
+
+<div class="container" id="register_form">
+
+    <div width="100%" height="300px">&nbsp<br>&nbsp</div>
+    <div class="page-header">
+        <h1 id="head" align="center">
+            清华大学学生科协招新报名表
+        </h1>
+    </div>
+    <div class="page-header" id="tips_head">
+        <h4 id="tips" align="left">填写说明：标注<span style="color:red">*</span>的项目为必填项。</h4>
+    </div>
+    <form action="register.php" onsubmit="return validate_form()" method="get">
+        <div class="row">
+            <div class="col-lg-6">
+                <p><span style="color:red" >*</span>1.姓名</p>
+                <input id="text_user_name" name="user_name" style="width:100%" type="text"
+                       data-placement="top" role="button" data-toggle="popover"
+                       data-trigger="focus" data-content="请填写姓名"
+                       onclick="$(this).popover('hide')">
+                <p></p>
+                <p><span style="color:red">*</span>2.性别</p>
+                <p id="text_user_sex"
+                   data-placement="top" role="button" data-toggle="popover"
+                   data-trigger="focus" data-content="请选择性别">
+                </p>
+                <input type="radio" name="user_sex" value="0"
+                       onclick="$('#text_user_sex').popover('hide');sex_verified=true">
+                男
+                <br>
+                <input type="radio" name="user_sex" value="1"
+                       onclick="$('#text_user_sex').popover('hide');sex_verified=true">
+                女
+                <p></p>
+                <p><span style="color:red">*</span>3.学号</p>
+                <input id="text_user_student_number" type="text" style="width:100%" name="user_student_number"
+                       data-placement="top" role="button" data-toggle="popover"
+                       data-trigger="focus" data-content="请填写学号"
+                       onclick="$(this).popover('hide')">
+                <p></p>
+                <p><span style="color:red">*</span>4.院系</p>
+                <input id="text_user_student_depart" type="text" style="width:100%" name="user_student_depart"
+                       data-placement="top" role="button" data-toggle="popover"
+                       data-trigger="focus" data-content="请填写院系"
+                       onclick="$(this).popover('hide')">
+                <p></p>
+                <p><span style="color:red">*</span>5.班级</p>
+                <input id="text_user_student_class" type="text" style="width:100%" name="user_student_class"
+                       data-placement="top" role="button" data-toggle="popover"
+                       data-trigger="focus" data-content="请填写班级"
+                       onclick="$(this).popover('hide')">
+                <p></p>
+                <p><span style="color:red">*</span>6.电话号码</p>
+                <input id="text_user_phone_number" type="text" style="width:100%" name="user_phone_number"
+                       data-placement="top" role="button" data-toggle="popover"
+                       data-trigger="focus" data-content="请填写电话号码"
+                       onclick="$(this).popover('hide')">
+                <p></p>
+                <p><span style="color:red">*</span>7.电子邮箱</p>
+                <input id="text_user_email" type="text" style="width:100%" name="user_email"
+                       data-placement="top" role="button" data-toggle="popover"
+                       data-trigger="focus" data-content="请填写电子邮箱地址"
+                       onclick="$(this).popover('hide')">
+                <p></p>
+            </div>
+            <div class="col-lg-6">
+                <p>8.兴趣爱好及特长(不要超过500字)</p>
+                <textarea name="user_hobby&speciality" style="resize:none;width:100%;height:220px"></textarea>
+                <p></p>
+                <p>9.意向部门</p>
+                <p>第一志愿</p>
+                <select name="user_intention1" style="width:100%">
+                    <option value="0">...</option>
+                    <option value="1">办公室</option>
+                    <option value="2">活动策划部</option>
+                    <option value="3">宣传策划部</option>
+                    <option value="4">内联部</option>
+                    <option value="5">外联部</option>
+                    <option value="6">星火论坛部</option>
+                    <option value="7">学术资讯部</option>
+                    <option value="9">赛事部</option>
+                    <option value="10">挑战杯部</option>
+                    <option value="8">学术支持部</option>
+                </select>
+                <p></p>
+                <p>第二志愿</p>
+                <select name="user_intention2" style="width:100%">
+                    <option value="0">...</option>
+                    <option value="1">办公室</option>
+                    <option value="2">活动策划部</option>
+                    <option value="3">宣传策划部</option>
+                    <option value="4">内联部</option>
+                    <option value="5">外联部</option>
+                    <option value="6">星火论坛部</option>
+                    <option value="7">学术资讯部</option>
+                    <option value="9">赛事部</option>
+                    <option value="10">挑战杯部</option>
+                    <option value="8">学术支持部</option>
+                </select>
+                <p></p>
+                <p>第三志愿</p>
+                <select name="user_intention3" style="width:100%">
+                    <option value="0">...</option>
+                    <option value="1">办公室</option>
+                    <option value="2">活动策划部</option>
+                    <option value="3">宣传策划部</option>
+                    <option value="4">内联部</option>
+                    <option value="5">外联部</option>
+                    <option value="6">星火论坛部</option>
+                    <option value="7">学术资讯部</option>
+                    <option value="9">赛事部</option>
+                    <option value="10">挑战杯部</option>
+                    <option value="8">学术支持部</option>
+                </select>
+            </div>
+        </div>
+
+        <p><br></p>
+        <input type="submit" class="btn btn-info" value="提交" style="width:100%">
+        <p><br></p>
+    </form>
+    <br>
+    <img src="images/intro-join-1.png" width="100%">
+</div>
+
+<div class="panel-footer">
+    清华大学学生科协
+</div>
+</body>
+</html>
